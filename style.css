@@ -1,0 +1,451 @@
+/*Universal Stylings*/
+
+html {
+    font-size: 16px;
+}
+
+/* Header and Nav*/
+
+header h1 {
+    font-family: Monoton;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    word-spacing: 1.5rem;
+    font-weight: normal;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Nixie One;
+    font-size: 1.5rem;
+    }
+
+nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+    header h1{
+        justify-content: center;
+        font-size: xx-large;
+    }
+
+    nav ul{
+        font-size: small;
+        position: relative;
+        left: -18.5px;
+        
+    }
+}
+
+@media only screen and (min-width:1600px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20rem;
+    }
+}
+
+/*Vision*/
+
+.vision-image {
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    font-size: 0%;
+    margin-bottom: -500px;
+}
+
+
+.vision-text{
+    background-color: rgba(255, 191, 101, .90);
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:36%;
+    top: -60px;
+}
+
+#vision p{
+    font-family: Roboto Mono;
+    font-size: 2rem;
+    font-weight: 350;
+    text-align: center;
+    padding: 0;
+    line-height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    
+}
+
+@media only screen and (max-width: 500px ){
+    
+    .vision-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .vision-text {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 273px;
+        left: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #vision p {
+        font-size: medium;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+      
+
+    }
+    }
+    
+@media only screen and (min-width:550px) and (max-width:850px ){
+    
+    .vision-image img {
+        display: flex;
+        max-width: 100%;
+        max-height: 80%;
+        
+    }
+    
+    .vision-text{
+        position: relative;
+        left: 212px;
+        top:-50px;
+    }
+    
+    }
+
+/*Secondary Text*/
+#secondary-text p{
+    font-family: Roboto Mono;
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    top: 150px;
+    text-decoration: underline;
+    
+}
+
+@media only screen and (max-width: 500px ){
+    #secondary-text p{
+    margin-top: 130px;
+    margin-bottom: 50px;
+    font-size: small;
+    }
+
+    
+}
+
+@media only screen and (min-width:550px) and (max-width:850px ){
+    #secondary-text p{
+        font-size: small;
+    }
+}
+
+@media only screen and (min-width:1600px){
+    .vision-text{
+        position: relative;
+        left: 41.5%;
+    }
+}
+/*Menu*/
+
+.menu-title{
+    background-color: rgba(255, 191, 101, .90);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 245px;
+    left:43%;
+}
+
+.menu-title h2{
+    font-family: Nixie One;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#menu .images-container{
+    display: flex;
+    margin: auto 2px;
+   }
+
+
+#menu .image-container{
+    max-width: 400px;
+    height: 300px;
+    display: flex;
+
+    
+}
+
+#menu img{
+    width: 100%;
+    height: auto;
+}
+
+.menu-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -1.5%;
+    margin-top: 3rem;
+
+}
+.menu {
+    position: relative;
+    display: flex;
+}
+
+.menu h2, .menu h3{
+    font-family: Roboto Mono;
+}
+
+.menu h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.menu h3{
+    font-size: 1.5rem;
+    line-height: 5rem;
+    font-weight: 100;
+}
+
+.menu-text ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+    
+    #menu .images-container{
+        display: flex;
+        max-width: 100%;
+    }
+    
+    #menu img {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    #menu .extra img {
+        display: none;
+    } 
+    
+    .menu-title{
+        width: 150px;
+        height: 150px;
+        position: relative;
+        left: 120px;
+        top: 227px;
+    }
+
+    .menu-title h2{
+        font-size: large;
+    }
+
+    .menu-text h2{
+        font-size: medium; 
+    }
+
+    .menu-text h3{
+        font-size: small;
+        line-height: 2rem;
+
+    }
+
+    .menu-text ul{
+        text-align: center;
+        position: relative;
+        left: -9px;
+    }
+}
+
+@media only screen and (min-width:550px) and (max-width:850px) {
+
+    #menu{
+        margin-top: 50px;
+    }
+
+    .menu-title{
+        z-index: 10;
+        position: relative;
+        left: 328px;
+        width: 170px;
+        height: 170px;
+       
+        
+    }
+
+    #menu .extra img {
+        display: none;
+    }
+
+    .image-container img{
+        position: relative;
+        left: 200px;
+        z-index: 1;
+    }
+
+    .menu-text h2{
+        font-size: x-large; 
+    }
+
+    .menu-text h3{
+        font-size: medium;
+        line-height: 2rem;
+
+    }
+
+    .menu-text ul{
+        text-align: center;
+        position: relative;
+        left: 2px;
+    }
+}
+
+@media only screen and (min-width:1600px) {
+    #menu .images-container{
+        position: relative;
+        left: 18%;
+        z-index: 1;
+    }
+
+    .menu-title{
+        z-index: 10;
+        position: relative;
+        left: 45.5%;
+
+    }
+}
+
+/*Story*/
+
+.story-box h2 {
+    font-family: Nixie One;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top: -15px;
+    
+
+}
+
+.story-box{
+    background-color: rgba(255, 191, 101, .9);
+    padding: 30px 30px;
+    margin-top: 4rem;
+}
+
+.story-images-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.story-image img {
+    width: 300px;
+    height: 500px;
+    
+  }
+
+.story-text p {
+    font-family: Roboto Mono;
+    font-size: 1.25rem;
+    font-weight: 100;
+    padding: 10px 50px 20px;
+    text-align: center;
+   
+}
+
+.small{
+    display: none;
+}
+@media only screen and (max-width: 500px ){
+    .story-image img{
+        width: 150px;
+        height: 200px;
+       
+    }
+
+    .story-images-container{
+        gap: 1rem;
+    }
+
+    .story-text p{
+        font-size: small;
+
+    }
+}
+
+@media only screen and (min-width:1600px){
+    
+    .story-box{
+        width: 1200px;
+        position: relative;
+        left: 25%;
+
+    }
+
+    .story-text p{
+        padding: 5px 5px;
+        
+    }
+}
+
+/*Footer*/
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-text h2{
+    font-family: Monoton;
+    font-weight: normal;
+}
+
+.footer-text h5{
+    font-weight: normal;
+}
+
+.footer-text h6{
+    font-weight: normal;
+}
